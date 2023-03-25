@@ -23,16 +23,17 @@ const googleAuth = () =>{
         </div>
         <div className={styles.right}>
           <h2 className={styles.from_heading}>Create Account</h2>
+          <input type="text" className={styles.input} placeholder="Username"/>
             <input type="text" className={styles.input} placeholder="Email"/>
-            <input type="text" className={styles.input} placeholder="Password"/>
-            <button className={styles.btn}>Log In</button>
+            <input type="password" className={styles.input} placeholder="Password"/>
+            <button className={styles.btn}>Sign Up</button>
             <p className={styles.text}>or</p>
             <button className={styles.google_btn} onClick={googleAuth}>
               <img src="./images/google.png" alt="google icon" />
-              <span>Sign in with Google</span>
+              <span>Sign up with Google</span>
             </button>
             <p className={styles.text}>
-              New Here? <Link to="/signup">Sign Up</Link>
+              Already Have Account? <Link to="/login">Log in</Link>
             </p>
         </div>
       </div>
