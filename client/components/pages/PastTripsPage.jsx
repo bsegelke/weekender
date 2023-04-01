@@ -60,10 +60,6 @@ return(
 </div>
 <div className='BottomStuff'>
    <div className="ChosenCampGroundDesc"dangerouslySetInnerHTML={{ __html: trip.campsiteDesc}} />
-   
-   <Link to="/packing-list" state={{weatherData:weatherData}}style={{textDecoration: 'none', textEmphasisColor: 'white'}}>
-   <button className='listButton'>Packing List</button>
-   </Link>
    </div>
    </div>
  )
