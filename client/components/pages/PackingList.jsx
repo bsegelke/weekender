@@ -163,9 +163,11 @@ function PackingList() {
         <h1 className="weekendertext">
           <Link to="/" style={{ textDecoration: 'none', textEmphasisColor: 'white' }}>WEEKENDER </Link>
         </h1>
+
         <h1 className='welcome'>PACKING LIST</h1>
         <button className='logoutButton' onClick={(logout)}>Log Out</button>
       </div>
+
       <div className='packing-container'>
         <ul className='packing-list'>
           {list.map((item, index) => (
@@ -183,13 +185,18 @@ function PackingList() {
           ))}
         </ul>
         <div className='add-item'>
-          <input 
-          type='text' 
-          placeholder='add to packing list'
-          onKeyDown={ (event) => event.key === 'Enter' ? addItem() : null }
-           />
+          <input
+            type='text'
+            placeholder='add to packing list'
+            onKeyDown={(event) => event.key === 'Enter' ? addItem() : null}
+          />
           <button onClick={addItem} >Add</button>
         </div>
+      </div>
+      <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
+        <Link to="/upcoming-trip" style={{ textDecoration: 'none', textEmphasisColor: 'white' }}>
+          <button className='listButton'>GO BACK</button>
+        </Link>
       </div>
     </div>
   );
