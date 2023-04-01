@@ -91,7 +91,7 @@ const NewTripInput = ({updateNewTripState}) => {
 return(
 
     <div className='container' style={{backgroundColor: '#a8ede3', borderRadius: '2rem', padding: '1rem'}} >
-    <label style={{color: 'black', fontSize: '1.5rem'}}>
+    <label style={{color: 'black', fontSize: '1.5rem', fontFamily: 'sans-serif'}}>
       State: 
       <select name="selectedState" value={selectedState} onChange={handleStateChange}>
         {stateOptions}
@@ -101,7 +101,7 @@ return(
       <DatePickerEnd endDate={endDate} setEndDate={setEndDate} maxDate={maxDate.toISOString().slice(0, 10)} />
     </label>
     <br />
-    <h3 style={{color: 'black', textDecoration: 'underline'}}>Please select dates within 10 days of today (for accurate weather predictions):</h3>
+    <h3 style={{color: 'black', textDecoration: 'underline', fontFamily: 'sans-serif'}}>Please select dates within 10 days of today (for accurate weather predictions):</h3>
     <DisplayTripInfo selectedState={selectedState} startDate={startDate} endDate={endDate} />
     </div>
  )

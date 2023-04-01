@@ -158,7 +158,7 @@ function PackingList() {
   }
   // onChange={ updateItem }
   return (
-    <div className="newTripPage">
+    <div className="listPage">
       <div className="topBar">
         <h1 className="weekendertext">
           <Link to="/" style={{ textDecoration: 'none', textEmphasisColor: 'white' }}>WEEKENDER </Link>
