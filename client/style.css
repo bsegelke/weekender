@@ -57,7 +57,10 @@ login page
   padding: 200px 200px;
   border-radius: 30px;
   font-size: 30px;
-  background-color: rgb(15, 95, 255);
+  background-image: url('https://i.imgur.com/qf4ehGh.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   font-family: 'Karantina', Arial, sans-serif;
   color: beige;
 }
@@ -91,7 +94,10 @@ home page
   padding: 200px 200px;
   border-radius: 30px;
   font-size: 30px;
-  background-color:rgb(0,184,245);
+  background-image: url('https://i.imgur.com/qf4ehGh.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   font-family: 'Karantina', Arial, sans-serif;
   color: beige;
   box-shadow: 5px 5px 5px #000000;
@@ -99,18 +105,29 @@ home page
   font-weight: bolder;
 }
 .addTripHome:hover {
+  cursor: pointer;
   box-shadow: 0px 0px 10px 5px rgb(15, 95, 255);
   box-shadow: 0px 0px 10px 5px rgb(15, 95, 255);;
   text-shadow: 5px 5px 5px #000000;
   transform: scale(1.05);
+  background-image: url('https://i.imgur.com/5vjp3xO.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   cursor: pointer;
 }
 .upcomingTrip:hover {
+  cursor: pointer;
   box-shadow: 0px 0px 10px 5px rgb(15, 95, 255);;
   box-shadow: 0px 0px 10px 5px rgb(15, 95, 255);;
   text-shadow: 5px 5px 5px #000000;
   transform: scale(1.05);
-  cursor: pointer;
+  background-image: url('https://i.imgur.com/5vjp3xO.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+  
 }
 
 .upcomingTrip{
@@ -123,7 +140,10 @@ home page
   padding: 200px 200px;
   border-radius: 30px;
   font-size: 30px;
-  background-color:rgb(0,184,245);
+  background-image: url('https://i.imgur.com/qf4ehGh.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   font-family: 'Karantina', Arial, sans-serif;
   color: beige;
   box-shadow: 5px 5px 5px #000000;
@@ -131,7 +151,14 @@ home page
   font-weight: bolder;
 
 }
-
+.BottomStuff{
+  margin-top: 10px;
+  background-color: rgb(56, 125, 125);
+  padding: 20px;
+  border-radius: 20px;
+  opacity: 70%;
+  box-shadow: 9px 9px 9px #000000;
+}
 
 
 #outerFrame{
@@ -245,14 +272,57 @@ Campground List styles */
 
   
   .ChosenCampGroundPage {
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    background-position: center center;
+    /* background-color: rgb(15, 95, 255); */
+    background-image: url('https://external-preview.redd.it/kdftib6n8pUvTxcDtDL7l5Yztil5JUoyB0G6BYdUKEI.jpg?auto=webp&v=enabled&s=cc30eacee7154af39673a00e658c0edd25cae098');
+    background-size: cover;
+   
+  }
+  
+  /* .newTripPage {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-position: center center;
+     background-image: url('https://i.redd.it/9i1bnqswc1oz.jpg');
+    background-size: cover;
+   
+  } */
+  .newTripPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 1000vh;
+    background-image: url('https://i.redd.it/9i1bnqswc1oz.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .listPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    background-image: url('https://cdn.packhacker.com/2022/06/d78f3bdf-vpl-flatlay.jpg?auto=compress&auto=format&w=1110&h=740&fit=crop');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
   
  
-  
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
  
   
   
@@ -269,6 +339,11 @@ Campground List styles */
     width: 46%;
     margin-top: 20px;
     margin-bottom: 20px;
+    background-color: rgb(56, 125, 125);
+    padding: 20px;
+    border-radius: 20px;
+    
+    box-shadow: 9px 9px 9px #000000;
   }
   .ChosenCampGroundPhotos{
     height: 600px;
