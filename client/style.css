@@ -2,6 +2,14 @@
 login page
 */
 
+.login-page {
+  height: 100vh;
+  background-image: url('https://i.imgur.com/4Vsv4vG.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .topBar {
   display: flex;
   justify-content: space-between;
