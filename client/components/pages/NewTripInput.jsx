@@ -97,7 +97,7 @@ return(
         {stateOptions}
       </select>
       <br />
-      <DatePickerStart startDate={startDate} setStartDate={setStartDate} style={{backgroundColor: '#f2f2f2'}} maxDate={maxDate.toISOString().slice(0, 10)} />
+      <DatePickerStart startDate={startDate} setStartDate={setStartDate} maxDate={maxDate.toISOString().slice(0, 10)} />
       <DatePickerEnd endDate={endDate} setEndDate={setEndDate} maxDate={maxDate.toISOString().slice(0, 10)} />
     </label>
     <br />

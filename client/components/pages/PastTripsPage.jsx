@@ -41,13 +41,15 @@ const settings = {
 if(trip){
 return(
   <div className="ChosenCampGroundPage">
-   <div className="topBar">
+   <div className="topBar" style={{position: 'fixed', top: 0, left: 0, right: 0,backgroundColor:'rgb(56, 125, 125)', zIndex:1, marginBottom: "30px"}}>
 <h1 className="weekendertext">
-<Link to="/" style={{textDecoration: 'none', textEmphasisColor: 'white'}}>WEEKENDER </Link></h1>
+<Link to="/" style={{textDecoration: 'none', color: 'white'}}>WEEKENDER </Link></h1>
 <h1 className='welcome'>{trip.campsiteName}</h1>
   <button className='logoutButton' onClick={(logout)}>Log Out</button>
 </div>
+<div className='WeatherBarDiv' style={{marginTop:'90px'}}>
    <TripWeatherbar trip={trip} updateWeatherDataState={updateWeatherDataState}/>
+   </div>
    <div className='photoSlider'>
 <Slider {...settings}>
 {trip?.campsiteImg.map((image) => (

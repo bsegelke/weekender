@@ -161,10 +161,10 @@ function PackingList() {
     <div className="listPage">
       <div className="topBar">
         <h1 className="weekendertext">
-          <Link to="/" style={{ textDecoration: 'none', textEmphasisColor: 'white' }}>WEEKENDER </Link>
+          <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>WEEKENDER </Link>
         </h1>
 
-        <h1 className='welcome'>PACKING LIST</h1>
+        <h1 className='welcome' style={{textShadow:'9px 9px 9px #000000', color:'rgb(15, 95, 255)'}}>PACKING LIST</h1>
         <button className='logoutButton' onClick={(logout)}>Log Out</button>
       </div>
 

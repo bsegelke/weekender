@@ -249,7 +249,7 @@ ucpming trip page */
 Campground List styles */
 .CampGroundsListContainer{
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(4,1fr);
   gap:10px
 }
 
@@ -316,6 +316,7 @@ Campground List styles */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    
   }
   
  
@@ -371,6 +372,15 @@ Campground List styles */
     background-color: green;
   }
 
+  .weekendertext{
+    margin-left: 15px;
+    
+  }
+  .weekendertext:hover{
+    transform:scale(1.1);
+    cursor: pointer;
+    color: #dadada;
+  }
 /*  WeatherBar */
 
 .WeatherbarContainer{

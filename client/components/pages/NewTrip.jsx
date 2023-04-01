@@ -39,17 +39,21 @@ const NewTrip = ()=>{
 return(
 
   <div className="newTripPage">
-     <div className="topBar">
+     <div className="topBar" style={{position: 'fixed', top: 0, left: 0, right: 0,backgroundColor:'rgb(56, 125, 125)', zIndex:1, marginBottom: "30px"}}>
 <h1 className="weekendertext">
-<Link to="/" style={{textDecoration: 'none', textEmphasisColor: 'white'}}>WEEKENDER </Link></h1>
+<Link to="/" style={{textDecoration: 'none', color: 'white'}}>WEEKENDER </Link></h1>
   <h1 className='welcome'> WHERE YA HEADED?</h1>
   <button className='logoutButton' onClick={(logout)}>Log Out</button>
 </div>
    <hr />
+   <div style={{marginTop: '80px'}}>
    <NewTripInput updateNewTripState={updateNewTripState} />
-   <button onClick={getAllCampgrounds} style={{backgroundColor: 'green', color: 'white', width: '6rem', height: '3rem', fontSize: '1.5rem', borderRadius: '1.4rem'}} >Search</button>
+   
    <hr />
+   </div>
+   <button onClick={getAllCampgrounds} style={{backgroundColor: 'green', color: 'white', width: '6rem', height: '3rem', fontSize: '1.5rem', borderRadius: '1.4rem'}} >Search</button>
   <div className='more'>
+  
    <CampGroundsList startDate={startDate} endDate={endDate} campgroundData={campgroundData}/>
    </div>
    </div>

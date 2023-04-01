@@ -51,14 +51,15 @@ const settings = {
 
 return(
 <div className='ChosenCampGroundPage'>
-<div className="topBar">
+<div className="topBar" style={{position: 'fixed', top: 0, left: 0, right: 0,backgroundColor:'rgb(56, 125, 125)', zIndex:1, marginBottom: "30px"}}>
 <h1 className="weekendertext">
-<Link to="/" style={{textDecoration: 'none', textEmphasisColor: 'white'}}>WEEKENDER </Link></h1>
+<Link to="/" style={{textDecoration: 'none', color: 'white'}}>WEEKENDER </Link></h1>
 <h1 className='welcome'>{campground.FacilityName}</h1>
   <button className='logoutButton' onClick={(logout)}>Log Out</button>
 </div>
+<div style={{marginTop:'80px'}}>
    <div className='Weatherbar'><WeatherBar startDate={startDate} endDate={endDate} campground={campground}/></div>
-
+   </div>
   
    <div className='photoSlider'>
    <Slider {...settings}>
@@ -74,10 +75,10 @@ return(
    {/* <img className="ChosenCampGroundPhoto" src={campground.MEDIA[0].URL}/> */}
 
    <Link to='/upcoming-trip' style={{textDecoration: 'none', textEmphasisColor: 'white'}}>
-   <button className='saveTripButton'  onClick={saveTrip}>SAVE TRIP</button>
+   <button className='saveTripButton'  onClick={saveTrip} style={{backgroundColor: 'green', color: 'white', width: '9rem', height: '6rem', fontSize: '1.5rem', borderRadius: '1.4rem'}}>SAVE TRIP</button>
    </Link>
    <Link to='/new-trip' style={{textDecoration: 'none', textEmphasisColor: 'white'}}>
-   <button className='goBackButton'>GO BACK</button>
+   <button className='goBackButton' style={{backgroundColor: 'blue', color: 'white', width: '9rem', height: '6rem', fontSize: '1.5rem', borderRadius: '1.4rem'}}>GO BACK</button>
    </Link>
    <div className="ChosenCampGroundDesc"dangerouslySetInnerHTML={{ __html: campground.FacilityDescription }} />
     <div className="ChosenCampGroundLat">Latitude:{campground.FacilityLatitude}</div>
