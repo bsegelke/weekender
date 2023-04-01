@@ -57,13 +57,18 @@ login page
   padding: 200px 200px;
   border-radius: 30px;
   font-size: 30px;
-  background-color: rgb(208, 130, 74);
+  background-color: rgb(15, 95, 255);
   font-family: 'Karantina', Arial, sans-serif;
   color: beige;
 }
 
 body{
-  background-color: rgb(160, 63, 63)
+  /* background-color: rgb(160, 63, 63) */
+  background-image: url('https://blog-assets.thedyrt.com/uploads/2019/01/shutterstock_1033306540-1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+ 
 }
 /* 
 home page
@@ -86,7 +91,7 @@ home page
   padding: 200px 200px;
   border-radius: 30px;
   font-size: 30px;
-  background-color: rgb(208, 130, 74);
+  background-color:rgb(0,184,245);
   font-family: 'Karantina', Arial, sans-serif;
   color: beige;
   box-shadow: 5px 5px 5px #000000;
@@ -94,15 +99,15 @@ home page
   font-weight: bolder;
 }
 .addTripHome:hover {
-  box-shadow: 0px 0px 10px 5px rgba(208, 130, 74, 0.8);
-  box-shadow: 0px 0px 10px 5px rgba(255, 140, 57, 0.8);
+  box-shadow: 0px 0px 10px 5px rgb(15, 95, 255);
+  box-shadow: 0px 0px 10px 5px rgb(15, 95, 255);;
   text-shadow: 5px 5px 5px #000000;
   transform: scale(1.05);
   cursor: pointer;
 }
 .upcomingTrip:hover {
-  box-shadow: 0px 0px 10px 5px rgba(208, 130, 74, 0.8);
-  box-shadow: 0px 0px 10px 5px rgba(255, 140, 57, 0.8);
+  box-shadow: 0px 0px 10px 5px rgb(15, 95, 255);;
+  box-shadow: 0px 0px 10px 5px rgb(15, 95, 255);;
   text-shadow: 5px 5px 5px #000000;
   transform: scale(1.05);
   cursor: pointer;
@@ -118,7 +123,7 @@ home page
   padding: 200px 200px;
   border-radius: 30px;
   font-size: 30px;
-  background-color: rgb(208, 130, 74);
+  background-color:rgb(0,184,245);
   font-family: 'Karantina', Arial, sans-serif;
   color: beige;
   box-shadow: 5px 5px 5px #000000;
@@ -157,7 +162,7 @@ home page
 .ImgFrame {
   padding: 10px;
   margin: 10px;
-  background-color: rgb(208, 130, 74);
+  background-color:rgb(0,184,245);
   width: 100%;
   border-radius: 30px;
   position: relative;
@@ -206,7 +211,7 @@ ucpming trip page */
  
   float: right;
   color: beige;
-  background-color: rgb(208, 130, 74);
+  background-color: rgb(15, 95, 255);
   font-size: 20px;
   font-family: 'Karantina', Arial, sans-serif;
   padding: 10px 40px;
